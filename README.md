@@ -117,12 +117,12 @@ pip install -r requirements.txt
 
 3. Start the backend server:
 ```bash
-python -m uvicorn backend.main:app --reload
+python -m uvicorn backend.main:app --reload --port 8001
 ```
 
-The backend API will be available at `http://localhost:8000`
-- API Documentation: `http://localhost:8000/docs`
-- Health Check: `http://localhost:8000/api/health`
+The backend API will be available at `http://localhost:8001`
+- API Documentation: `http://localhost:8001/docs`
+- Health Check: `http://localhost:8001/api/health`
 
 ### Frontend Setup
 
@@ -141,7 +141,7 @@ npm install
 npm run dev
 ```
 
-The frontend application will be available at `http://localhost:5173`
+The frontend application will be available at `http://localhost:5174`
 
 ## 🎯 Usage
 
@@ -269,7 +269,7 @@ Where:
 
 ### Frontend Issues
 - **Build errors**: Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
-- **API connection errors**: Verify backend is running on port 8000
+- **API connection errors**: Verify backend is running on port 8001
 - **Parse tree not displaying**: Ensure you've generated a key first
 
 ## 🚧 Future Enhancements

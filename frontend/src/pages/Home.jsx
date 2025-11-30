@@ -34,7 +34,7 @@ function Home() {
                 whileHover={{ y: -5 }}
                 className="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700 hover:border-green-500 transition-all"
               >
-                <div className="text-4xl mb-4">🌳</div>
+                <div className="text-4xl mb-4">💡</div>
                 <h3 className="text-xl font-semibold text-white mb-2">Parse Tree</h3>
                 <p className="text-slate-400">Visualize the derivation tree of generated keys</p>
               </motion.div>
