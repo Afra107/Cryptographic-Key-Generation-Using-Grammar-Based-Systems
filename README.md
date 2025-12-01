@@ -2,7 +2,7 @@
 
 A modern web application for generating cryptographic keys using Context-Free Grammar (CFG) based systems. The application provides a comprehensive interface for key generation, parse tree visualization, entropy analysis, and AES encryption/decryption.
 
-## 🚀 Features
+## Features
 
 ### 1. **Grammar Mode Selection**
 - **Multiple Selection Support**: Select one or more grammar modes to combine in key generation
@@ -45,7 +45,7 @@ A modern web application for generating cryptographic keys using Context-Free Gr
 - Secure nonce generation
 - Base64 encoded output
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Backend
 - **FastAPI** - Modern Python web framework
@@ -62,7 +62,7 @@ A modern web application for generating cryptographic keys using Context-Free Gr
 - **Framer Motion** - Animation library
 - **Axios** - HTTP client
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 TOA_Project/
@@ -96,7 +96,7 @@ TOA_Project/
 └── README.md
 ```
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.12+ 
@@ -143,7 +143,7 @@ npm run dev
 
 The frontend application will be available at `http://localhost:5174`
 
-## 🎯 Usage
+## Usage
 
 ### Generating Keys
 
@@ -168,7 +168,7 @@ The frontend application will be available at `http://localhost:5174`
 4. Click **Encrypt** to get encrypted data and nonce
 5. Click **Decrypt** to recover the original plaintext
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### CFG Endpoints
 
@@ -217,7 +217,7 @@ Body: {
 }
 ```
 
-## 🔐 Security Features
+## Security Features
 
 - **High Entropy Keys**: CFG-based generation ensures randomness
 - **AES-GCM Encryption**: Authenticated encryption with Galois/Counter Mode
@@ -225,7 +225,7 @@ Body: {
 - **Unique Nonces**: Each encryption uses a unique nonce
 - **Shannon Entropy Analysis**: Mathematical assessment of key strength
 
-## 🎨 Design Features
+## Design Features
 
 - **Dark Theme**: Professional dark theme with contrasting colors
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
@@ -235,7 +235,7 @@ Body: {
   - Green: Terminals (actual characters)
 - **Multi-Page Navigation**: Clean separation of features
 
-## 🔬 Grammar System
+## Grammar System
 
 The CFG generator uses descriptive nonterminal names:
 - **Start**: Root nonterminal
@@ -249,7 +249,7 @@ Start → Terminal Terminal Terminal ...
 Terminal → 0 | 1 | 2 | ... | a | b | ... | A | B | ... | ! | @ | ...
 ```
 
-## 📊 Entropy Calculation
+## Entropy Calculation
 
 The system calculates Shannon entropy using the formula:
 ```
@@ -260,7 +260,7 @@ Where:
 - `P(x)` is the probability of character `x` in the key
 - Higher entropy indicates better cryptographic strength
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Issues
 - **Port already in use**: Change the port in `uvicorn` command or stop the existing process
@@ -272,12 +272,12 @@ Where:
 - **API connection errors**: Verify backend is running on port 8001
 - **Parse tree not displaying**: Ensure you've generated a key first
 
-## 🚧 Future Enhancements
+## Future Enhancements
 
-- [ ] Export parse tree as image/PDF
-- [ ] Key strength recommendations
-- [ ] Multiple encryption algorithms
-- [ ] Key history and management
-- [ ] Custom grammar rule definitions
-- [ ] Batch key generation
-- [ ] Key comparison tools
+- Export parse tree as image/PDF
+- Key strength recommendations
+- Multiple encryption algorithms
+- Key history and management
+- Custom grammar rule definitions
+- Batch key generation
+- Key comparison tools
